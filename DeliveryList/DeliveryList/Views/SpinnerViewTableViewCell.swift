@@ -20,13 +20,10 @@ class SpinnerViewTableViewCell: UITableViewCell {
         self.activityIndicator.snp.makeConstraints { (make) in
             make.center.equalTo(self.contentView)
         }
-        activityIndicator.hidesWhenStopped = true
-        // Start Activity Indicator
         activityIndicator.startAnimating()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        
         super.init(coder: aDecoder)
     }
 

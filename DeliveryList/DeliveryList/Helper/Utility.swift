@@ -47,9 +47,12 @@ enum AppInfo {
 
 enum API {
     
-    //Development URL
-    static let kBaseURL = "http://localhost:8080"
+    //LocalHost URL
+    //static let kBaseURL = "http://localhost:8080"
     
+    //Development URL
+    static let kBaseURL = "https://mock-api-mobile.dev.lalamove.com"
+
     //Endpoints
     static let kDeliveryList = "/deliveries"
 }
