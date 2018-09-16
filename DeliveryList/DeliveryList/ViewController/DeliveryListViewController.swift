@@ -59,6 +59,7 @@ extension DeliveryListViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! DeliveryListTableViewCell
+        cell.titleLabel.text = "Deliver pets to Alan at Cheung Sha Wan"
         return cell
     }
     
