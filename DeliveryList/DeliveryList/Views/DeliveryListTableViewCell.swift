@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import SDWebImage
 
 class DeliveryListTableViewCell: UITableViewCell {
     
@@ -30,25 +31,23 @@ class DeliveryListTableViewCell: UITableViewCell {
     
     func initialUISetup()  {
         
-        //Postion viewContainer
+        //Position viewContainer
         self.contentView.addSubview(viewContainer)
         self.viewContainer.backgroundColor = UIColor.white
-        self.viewContainer.layer.cornerRadius = 8.0
-        self.viewContainer.layer.borderWidth = 1.0
-        self.viewContainer.layer.borderColor = UIColor.lightGray.cgColor
         self.viewContainer.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.contentView).inset(UIEdgeInsetsMake(8, 8, 8, 8))
+            make.edges.equalTo(self.contentView).inset(UIEdgeInsetsMake(8, 16, 8, 16))
         }
         
-        //Postion placeholder view
+        //Position placeholder view
         self.viewContainer.addSubview(self.imageViewPlaceholder)
         self.imageViewPlaceholder.backgroundColor = UIColor.groupTableViewBackground
         self.imageViewPlaceholder.layer.cornerRadius = 8.0
+        self.imageViewPlaceholder.contentMode = .scaleAspectFill
+        self.imageViewPlaceholder.clipsToBounds = true
         self.imageViewPlaceholder.snp.makeConstraints { (make) in
             make.left.equalTo(self.viewContainer).offset(8)
             make.centerY.equalTo(self.viewContainer)
-            make.width.equalTo(50)
-            make.height.equalTo(50)
+            make.width.height.equalTo(50)
         }
         
         //Position title
@@ -60,7 +59,12 @@ class DeliveryListTableViewCell: UITableViewCell {
             make.top.equalTo(self.imageViewPlaceholder)
         }
         
-        
+    }
+    
+    func setupCell(modal: DeliveryModel){
+        self.imageViewPlaceholder.sd_setImage(with: URL.init(string: modal.imageURL)) { (image, error, cache, url) in
+        }
+        self.titleLabel.text = "\(modal.deliveryDescription) at \(modal.address)"
     }
 
 }

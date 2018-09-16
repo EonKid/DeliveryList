@@ -12,6 +12,15 @@
 		548DA8EA214E38210059CE57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548DA8E8214E38210059CE57 /* LaunchScreen.storyboard */; };
 		548DA8F7214E39100059CE57 /* DeliveryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA8F6214E39100059CE57 /* DeliveryListViewController.swift */; };
 		548DA8FA214E41190059CE57 /* DeliveryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA8F9214E41190059CE57 /* DeliveryListTableViewCell.swift */; };
+		548DA8FC214E82F90059CE57 /* DeliveryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA8FB214E82F90059CE57 /* DeliveryDetailViewController.swift */; };
+		548DA900214E8A2A0059CE57 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA8FE214E8A2A0059CE57 /* Reachability.swift */; };
+		548DA901214E8A2A0059CE57 /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA8FF214E8A2A0059CE57 /* HRToast+UIView.swift */; };
+		548DA903214E8A580059CE57 /* WebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA902214E8A580059CE57 /* WebServiceRequest.swift */; };
+		548DA905214E8AA00059CE57 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA904214E8AA00059CE57 /* Utility.swift */; };
+		548DA908214E8BA20059CE57 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA907214E8BA20059CE57 /* UIView+Extension.swift */; };
+		548DA90A214E8D390059CE57 /* DeliveryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA909214E8D390059CE57 /* DeliveryModel.swift */; };
+		548DA90D214E9C6C0059CE57 /* DeliveryAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA90C214E9C6C0059CE57 /* DeliveryAnnotation.swift */; };
+		548DA90F214ED0660059CE57 /* SpinnerViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA90E214ED0660059CE57 /* SpinnerViewTableViewCell.swift */; };
 		8BA41C7F282A3E7B9DB0F083 /* Pods_DeliveryList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDCC154593B3C8E042D6334 /* Pods_DeliveryList.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +33,15 @@
 		548DA8EB214E38210059CE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		548DA8F6214E39100059CE57 /* DeliveryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListViewController.swift; sourceTree = "<group>"; };
 		548DA8F9214E41190059CE57 /* DeliveryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListTableViewCell.swift; sourceTree = "<group>"; };
+		548DA8FB214E82F90059CE57 /* DeliveryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewController.swift; sourceTree = "<group>"; };
+		548DA8FE214E8A2A0059CE57 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		548DA8FF214E8A2A0059CE57 /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		548DA902214E8A580059CE57 /* WebServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceRequest.swift; sourceTree = "<group>"; };
+		548DA904214E8AA00059CE57 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		548DA907214E8BA20059CE57 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		548DA909214E8D390059CE57 /* DeliveryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryModel.swift; sourceTree = "<group>"; };
+		548DA90C214E9C6C0059CE57 /* DeliveryAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryAnnotation.swift; sourceTree = "<group>"; };
+		548DA90E214ED0660059CE57 /* SpinnerViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewTableViewCell.swift; sourceTree = "<group>"; };
 		BFCB38AE6C26BD502433C69C /* Pods-DeliveryList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryList.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeliveryList/Pods-DeliveryList.release.xcconfig"; sourceTree = "<group>"; };
 		FFDCC154593B3C8E042D6334 /* Pods_DeliveryList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				548DA8DF214E381F0059CE57 /* AppDelegate.swift */,
+				548DA906214E8B730059CE57 /* Extensions */,
 				548DA8F5214E38D40059CE57 /* External */,
 				548DA8F4214E38C20059CE57 /* Helper */,
 				548DA8F3214E38B40059CE57 /* Model */,
@@ -87,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				548DA8F6214E39100059CE57 /* DeliveryListViewController.swift */,
+				548DA8FB214E82F90059CE57 /* DeliveryDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -95,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				548DA8F9214E41190059CE57 /* DeliveryListTableViewCell.swift */,
+				548DA90E214ED0660059CE57 /* SpinnerViewTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,6 +123,8 @@
 		548DA8F3214E38B40059CE57 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				548DA909214E8D390059CE57 /* DeliveryModel.swift */,
+				548DA90C214E9C6C0059CE57 /* DeliveryAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +132,8 @@
 		548DA8F4214E38C20059CE57 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				548DA904214E8AA00059CE57 /* Utility.swift */,
+				548DA902214E8A580059CE57 /* WebServiceRequest.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -116,8 +141,18 @@
 		548DA8F5214E38D40059CE57 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				548DA8FF214E8A2A0059CE57 /* HRToast+UIView.swift */,
+				548DA8FE214E8A2A0059CE57 /* Reachability.swift */,
 			);
 			path = External;
+			sourceTree = "<group>";
+		};
+		548DA906214E8B730059CE57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				548DA907214E8BA20059CE57 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A15C700A3FFE58DD5BFF3675 /* Frameworks */ = {
@@ -205,6 +240,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DeliveryList/Pods-DeliveryList-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -212,6 +249,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -247,7 +286,16 @@
 			files = (
 				548DA8F7214E39100059CE57 /* DeliveryListViewController.swift in Sources */,
 				548DA8E0214E381F0059CE57 /* AppDelegate.swift in Sources */,
+				548DA90F214ED0660059CE57 /* SpinnerViewTableViewCell.swift in Sources */,
+				548DA901214E8A2A0059CE57 /* HRToast+UIView.swift in Sources */,
+				548DA90A214E8D390059CE57 /* DeliveryModel.swift in Sources */,
+				548DA908214E8BA20059CE57 /* UIView+Extension.swift in Sources */,
+				548DA903214E8A580059CE57 /* WebServiceRequest.swift in Sources */,
+				548DA905214E8AA00059CE57 /* Utility.swift in Sources */,
 				548DA8FA214E41190059CE57 /* DeliveryListTableViewCell.swift in Sources */,
+				548DA900214E8A2A0059CE57 /* Reachability.swift in Sources */,
+				548DA90D214E9C6C0059CE57 /* DeliveryAnnotation.swift in Sources */,
+				548DA8FC214E82F90059CE57 /* DeliveryDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
